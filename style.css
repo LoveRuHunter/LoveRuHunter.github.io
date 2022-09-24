@@ -138,4 +138,6 @@ body {
 .language__item_active {
     color: #7E7E82;
 }
-.
+.language__item:hover {
+    color: #7E7E82;
+}
