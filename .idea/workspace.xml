@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9499ed07-a04e-4d78-9032-a2ae652e7154" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index1.3.html" beforeDir="false" afterPath="$PROJECT_DIR$/index1.3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/swiper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,7 @@
       <workItem from="1664791059861" duration="131000" />
       <workItem from="1664791248426" duration="31549000" />
       <workItem from="1664872171416" duration="5608000" />
-      <workItem from="1664954370272" duration="14594000" />
+      <workItem from="1664954370272" duration="15984000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1664052200192</created>
