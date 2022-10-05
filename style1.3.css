@@ -1,21 +1,22 @@
 @font-face {
-    font-family: 'TT Lakes';
-    src: url('Font/TTLakes-ExtraBold.eot');
-    src: local('TT Lakes Compressed Bold'), local('TTLakesCompressed-Medium'),
-    url('Font/TTLakes-ExtraBold.eot?#iefix') format('embedded-opentype'),
-    url('Font/TTLakes-ExtraBold.woff') format('woff'),
-    url('Font/TTLakes-ExtraBold.ttf') format('truetype');
-    font-weight: 600;
+    font-family: "TT Lakes";
+    src: url("Font/TTLakes-Regular.woff");
+    font-weight: 400;
+    font-display: swap;
     font-style: normal;
 }
 @font-face {
-    font-family: 'TT Lakes r';
-    src: url('/Font/TTLakes-Regular.eot');
-    src: local('TT Lakes Compressed Bold'), local('TTLakesCompressed-Medium'),
-    url('Font/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('Font/TTLakes-Regular.woff') format('woff'),
-    url('Font/TTLakes-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: "TT Lakes";
+    src: url("Font/TTLakes-Medium.woff");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TT Lakes";
+    src: url("Font/TTLakes-Bold.woff");
+    font-weight: 700;
+    font-display: swap;
     font-style: normal;
 }
 
@@ -45,8 +46,8 @@ body {
     min-height: 40px;
     border:none;
     background-color: #fff;
-    cursor:pointer ;
-    background-repeat: no-repeat ;
+    cursor:pointer;
+    background-repeat: no-repeat;
 }
 
 .header-main__item:last-child {
@@ -120,7 +121,7 @@ body {
     padding: 10px;
     margin-left: 16px;
     color: #7E7E82;
-    font-family: "TT Lakes r", "sans-serif";
+    font-family: "TT Lakes", "sans-serif";
     overflow-x: scroll;
     scrollbar-width: none;
 }
@@ -134,7 +135,7 @@ body {
     border: solid #B8FFEC 3px;
     padding: 8px;
     color: #7E7E82;
-    font-family: "TT Lakes r", "sans-serif";
+    font-family: "TT Lakes", "sans-serif";
 }
 .main-all__item{
     display: inline-flex;
@@ -143,14 +144,14 @@ body {
     padding: 11px;
     margin-left: 16px;
     color: #7E7E82;
-    font-family: "TT Lakes r", "sans-serif";
+    font-family: "TT Lakes", "sans-serif";
 }
 p {
-    font-family: "TT Lakes r", "sans-serif";
+    font-family: "TT Lakes", "sans-serif";
     margin-left: 16px;
 }
 .main-but__button {
-    font-family: "TT Lakes r", "sans-serif";
+    font-family: "TT Lakes", "sans-serif";
     font-size: 16px;
     margin-left: 16px;
     font-weight: bold;
@@ -165,28 +166,28 @@ p {
     border-radius: 10px;
 }
 .main-content__rws {
-    font-family: "TT Lakes r", "sans-serif";
+    font-family: "TT Lakes", "sans-serif";
     color:#7E7E82;
     margin-left: 56px;
 }
 .main-con {
     display:flex;
     align-items: center;
-    font-family: "TT Lakes r", "sans-serif";
-    font-weight: bold;
+    font-family: "TT Lakes", "sans-serif";
+    font-weight: 500;
     margin-top: 32px;
 }
 .main-con__pc {
     display:flex;
     text-decoration: none;
     align-items: center;
-    font-family: "TT Lakes r", "sans-serif";
-    font-weight: bold;
+    font-family: "TT Lakes", "sans-serif";
+    font-weight: 400;
     color:#1B1C21;
     margin-right: 32px;
 }
 .main-content__hr {
-    font-family: "TT Lakes r", "sans-serif";
+    font-family: "TT Lakes", "sans-serif";
     color: #7E7E82;
     margin-left: 56px;
 }
@@ -198,8 +199,8 @@ p {
     margin-right: 16px;
 }
 .main-button {
-    font-family: "TT Lakes r", "sans-serif";
-    font-weight: bold;
+    font-family: "TT Lakes", "sans-serif";
+    font-weight: 500;
     display: flex;
     font-size: 16px;
     line-height: 24px;
@@ -220,6 +221,88 @@ p {
 }
 .header-main-item2 {
     display:flex;
+}
+.swiper__title {
+    height: 55px;
+    display: flex;
+    font-family: "TT Lakes", "sans-serif";
+    align-items:center;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    border-top: 1px solid #D9FFF5;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    padding-left:24px;
+    color:#7E7E82;
+}
+.swiper-slide {
+    display: inline-block;
+    width: 240px;
+    height: 72px;
+    color:#FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    margin:0 0 16px 24px;
+}
+.swiper-slide__lenovo {
+    background: 16px url("Img/Lenovo.svg") no-repeat;
+}
+.swiper-slide__samsung {
+    background: 16px url("Img/Samsung.svg") no-repeat;
+}
+.swiper-slide__apple {
+    background: 16px url("Img/Apple.svg") no-repeat;
+}
+.swiper-slide__sonic {
+    background: 16px url("Img/Sonic.svg") no-repeat;
+}
+.swiper-slide__bosch {
+    background: 16px url("Img/Bosch.svg") no-repeat;
+}
+.swiper-slide__hp {
+    background: 16px url("Img/Hp.svg") no-repeat;
+}
+.swiper-slide__acer {
+    background: 16px url("Img/Acer.svg") no-repeat;
+}
+.swiper-slide__sony {
+    background: 16px url("Img/Sony.svg") no-repeat;
+}
+.swiper-slide__link {
+    width: 40px;
+    height: 40px;
+    border:2px solid #FF3E79;
+    position: absolute;
+    border-radius: 50%;
+    margin: 16px 16px 16px 184px;
+}
+.swiper-slide__link::after {
+    content: url("Img/Uppest.svg");
+    position: absolute;
+    right: 15px;
+    bottom:10px;
+}
+.swiper-look-more--button {
+    border:none;
+    background-color: white;
+    font-family: "TT Lakes", "sans-serif";
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.swiper-look-more--img {
+    margin-left: 35px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+.swiper-brand {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px){
@@ -267,6 +350,9 @@ body {
     .header-main__item--call {
         display: none;
     }
+    .swiper-brand {
+        width: 720px !important;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1120px) {
     .main-con__button {
@@ -308,6 +394,13 @@ body {
     }
     .header-main-logo {
         flex-basis: 70%;
+    }
+    .swiper-slide__sony,
+    .swiper-slide__sonic {
+       display: none;
+    }
+    .swiper-slide__hidden {
+        display: none;
     }
 }
 @media screen and (min-width: 1120px) {
