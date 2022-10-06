@@ -1,5 +1,5 @@
-let Button = document.querySelector('.swiper-look-more--button') // кнопка скрытия=раскрытия
-let RepairMenuItems = document.querySelectorAll('.swiper-slide__hidden') // коллекция всех элементов с классом swiper-slide__hidden
+let Button = document.querySelector('.desktopSwiper-look-more--button') // кнопка скрытия=раскрытия
+let RepairMenuItems = document.querySelectorAll('.desktopSwiper-slide__hidden') // коллекция всех элементов с классом swiper-slide__hidden
 let ArrowOfButton = document.querySelector('.swiper-look-more--img') // иконка стрелки
 
 Button.onclick = function() {

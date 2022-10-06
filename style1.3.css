@@ -222,7 +222,7 @@ p {
 .header-main-item2 {
     display:flex;
 }
-.swiper__title {
+.desktopSwiper__title {
     height: 55px;
     display: flex;
     font-family: "TT Lakes", "sans-serif";
@@ -235,7 +235,7 @@ p {
     padding-left:24px;
     color:#7E7E82;
 }
-.swiper-slide {
+.desktopSwiper-slide {
     display: inline-block;
     width: 240px;
     height: 72px;
@@ -244,31 +244,31 @@ p {
     border-radius: 6px;
     margin:0 0 16px 24px;
 }
-.swiper-slide__lenovo {
+.desktopSwiper-slide__lenovo {
     background: 16px url("Img/Lenovo.svg") no-repeat;
 }
-.swiper-slide__samsung {
+.desktopSwiper-slide__samsung {
     background: 16px url("Img/Samsung.svg") no-repeat;
 }
-.swiper-slide__apple {
+.desktopSwiper-slide__apple {
     background: 16px url("Img/Apple.svg") no-repeat;
 }
-.swiper-slide__sonic {
+.desktopSwiper-slide__sonic {
     background: 16px url("Img/Sonic.svg") no-repeat;
 }
-.swiper-slide__bosch {
+.desktopSwiper-slide__bosch {
     background: 16px url("Img/Bosch.svg") no-repeat;
 }
-.swiper-slide__hp {
+.desktopSwiper-slide__hp {
     background: 16px url("Img/Hp.svg") no-repeat;
 }
-.swiper-slide__acer {
+.desktopSwiper-slide__acer {
     background: 16px url("Img/Acer.svg") no-repeat;
 }
-.swiper-slide__sony {
+.desktopSwiper-slide__sony {
     background: 16px url("Img/Sony.svg") no-repeat;
 }
-.swiper-slide__link {
+.desktopSwiper-slide__link {
     width: 40px;
     height: 40px;
     border:2px solid #FF3E79;
@@ -276,13 +276,13 @@ p {
     border-radius: 50%;
     margin: 16px 16px 16px 184px;
 }
-.swiper-slide__link::after {
+.desktopSwiper-slide__link::after {
     content: url("Img/Uppest.svg");
     position: absolute;
     right: 15px;
     bottom:10px;
 }
-.swiper-look-more--button {
+.desktopSwiper-look-more--button {
     border:none;
     background-color: white;
     font-family: "TT Lakes", "sans-serif";
@@ -292,12 +292,12 @@ p {
     margin-bottom: 15px;
     font-size: 16px;
 }
-.swiper-look-more--img {
+.desktopSwiper-look-more--img {
     margin-left: 35px;
     cursor: pointer;
     margin-right: 7px;
 }
-.swiper-brand {
+.desktopSwiper-brand {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -305,8 +305,8 @@ p {
     height: 100%;
 }
 
-.swiper-slide.swiper-button-prev::after,
-.swiper-slide.swiper-button-next::after {
+.desktopSwiper-slide.desktopSwiper-button-prev::after,
+.desktopSwiper-slide.desktopSwiper-button-next::after {
     color:#fff;
     font-size: 80px;
 }
@@ -356,16 +356,16 @@ body {
     .header-main__item--call {
         display: none;
     }
-    .swiper-brand {
+    .desktopSwiper-brand {
         width: 720px !important;
     }
-    .swiper-slide {
+    .desktopSwiper-slide {
         width: 264px;
         flex-shrink: 0;
         margin: 0 16px 0 0;
     }
 
-    .swiper .swiper-brand {
+    .desktopSwiper .desktopSwiper-brand {
         justify-content: initial;
         flex-wrap: nowrap;
     }
@@ -411,11 +411,11 @@ body {
     .header-main-logo {
         flex-basis: 70%;
     }
-    .swiper-slide__sony,
-    .swiper-slide__sonic {
+    .desktopSwiper-slide__sony,
+    .desktopSwiper-slide__sonic {
        display: none;
     }
-    .swiper-slide__hidden {
+    .desktopSwiper-slide__hidden {
         display: none;
     }
 }
