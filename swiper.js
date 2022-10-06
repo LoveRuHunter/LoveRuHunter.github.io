@@ -27,3 +27,38 @@ Button.onclick = function() {
     }
 
 };
+// const slider = document.querySelector('.swiper-brand');
+// let mySwiper;
+//
+// function mobileSlider() {
+//     if (window.innerWidth <= 320 && slider.dataset.mobile === 'false') {
+//         mySwiper = new Swiper(slider, {
+//             slidesPerView: 9,
+//             spaceBetween: 10,
+//             loop: true,
+//             slideClass: 'card',
+//
+//         });
+//
+//         slider.dataset.mobile = 'true';
+//     }
+//
+//     if (window.innerWidth > 320) {
+//         slider.dataset.mobile = 'false';
+//         if (slider.classList.contains('swiper-container-initialized')) {
+//             mySwiper.destroy();
+//         }
+//     }
+// }
+//
+// mobileSlider()
+//
+// window.addEventListener('resize', () => {
+//     mobileSlider();
+// });
+new Swiper('.swiper-slide', {
+navigation: {
+    nextE1: '.swiper-button-next',
+    prevE1: '.swiper-button-prev'
+},
+});
