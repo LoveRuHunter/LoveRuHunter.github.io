@@ -1,6 +1,6 @@
 let Button = document.querySelector('.desktopSwiper-look-more--button') // кнопка скрытия=раскрытия
 let RepairMenuItems = document.querySelectorAll('.desktopSwiper-slide__hidden') // коллекция всех элементов с классом swiper-slide__hidden
-let ArrowOfButton = document.querySelector('.swiper-look-more--img') // иконка стрелки
+let ArrowOfButton = document.querySelector('.desktopSwiper-look-more--img') // иконка стрелки
 
 Button.onclick = function() {
     let lessText = 'Скрыть' // текст кнопки, когда скрыть
@@ -25,40 +25,23 @@ Button.onclick = function() {
         })
         ArrowOfButton.classList.remove('swap') // удаляем поворот у икноки
     }
-
 };
-// const slider = document.querySelector('.swiper-brand');
-// let mySwiper;
-//
-// function mobileSlider() {
-//     if (window.innerWidth <= 320 && slider.dataset.mobile === 'false') {
-//         mySwiper = new Swiper(slider, {
-//             slidesPerView: 9,
-//             spaceBetween: 10,
-//             loop: true,
-//             slideClass: 'card',
-//
-//         });
-//
-//         slider.dataset.mobile = 'true';
-//     }
-//
-//     if (window.innerWidth > 320) {
-//         slider.dataset.mobile = 'false';
-//         if (slider.classList.contains('swiper-container-initialized')) {
-//             mySwiper.destroy();
-//         }
-//     }
-// }
-//
-// mobileSlider()
-//
-// window.addEventListener('resize', () => {
-//     mobileSlider();
-// });
-new Swiper('.swiper-slide', {
-navigation: {
-    nextE1: '.swiper-button-next',
-    prevE1: '.swiper-button-prev'
-},
-});
+
+window.addEventListener("resize", windowSize);
+windowSize();
+function windowSize () {
+    let windowWidth = window.screen.availWidth;
+
+    if(windowWidth < 768) {
+        let swiper = new Swiper('.desktopSwiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+        }),
+
+
+
+
