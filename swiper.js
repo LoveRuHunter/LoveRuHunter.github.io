@@ -27,20 +27,30 @@ Button.onclick = function() {
     }
 };
 
-window.addEventListener("resize", windowSize);
-windowSize();
-function windowSize () {
-    let windowWidth = window.screen.availWidth;
+let init = false;
 
-    if(windowWidth < 768) {
-        let swiper = new Swiper('.desktopSwiper', {
-            slidesPerView: 'auto',
-            spaceBetween: 3,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            },
-        }),
+function swiperCard() {
+    if (window.innerWidth <= 768) {
+        if (!init) {
+            init = true;
+            swiper = new Swiper(".swiper", {
+                direction: "horizontal",
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 15,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        }
+    } else if (init) {
+        swiper.destroy();
+        init = false;
+    }
+}
+swiperCard();
+window.addEventListener("resize", swiperCard);
 
 
 
