@@ -306,13 +306,18 @@ p {
 }
 
 .swiper-pagination {
+    text-align: start !important;
     width: 14px;
     height: 14px;
-}
-.swiper-button-prev,
-.swiper-button-next {
+    background-color: #DDDDDD;
+    background: white;
+    margin:0 60px 100px 48px;
+    position: static !important;
 }
 
+.swiper-pagination-bullet-active {
+    background: #B5B6BC !important;
+}
 @media screen and (min-width: 320px) and (max-width: 767px){
 .header__divider--first {
     display:none;
@@ -363,8 +368,7 @@ body {
     }
     .desktopSwiper-slide {
         width: 264px;
-        flex-shrink: 0;
-        margin: 0 16px 0 0;
+        margin: 0 0 0 16px;
     }
 
     .desktopSwiper .desktopSwiper-brand {
@@ -433,6 +437,9 @@ body {
     .swiper {
         display:none;
     }
+    .swiper-pagination {
+        display: none;
+    }
 }
 @media screen and (min-width: 1120px) {
     .header {
@@ -471,5 +478,8 @@ body {
     }
     .swiper {
         display:none;
+    }
+    .swiper-pagination {
+        display: none;
     }
 }

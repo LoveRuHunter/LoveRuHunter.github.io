@@ -37,7 +37,6 @@ function swiperCard() {
                 direction: "horizontal",
                 slidesPerView: "auto",
                 centeredSlides: true,
-                spaceBetween: 15,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
