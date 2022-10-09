@@ -316,6 +316,9 @@ p {
 .swiper-pagination-bullet-active {
     background: #B5B6BC !important;
 }
+.swap {
+    transform:rotate(180deg);
+}
 @media screen and (min-width: 320px) and (max-width: 767px){
 .header__divider--first {
     display:none;
